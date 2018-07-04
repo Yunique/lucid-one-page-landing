@@ -1,0 +1,676 @@
+/*font-family: 'Quicksand', sans-serif;*/
+html {
+	font-size: 10px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+	box-sizing: border-box;
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: white;
+	outline: none;
+}
+
+li {
+	list-style: none;
+}
+
+.first-screen {
+	background: url(../images/header_bg.png) no-repeat center;
+	background-size: cover;
+}
+
+/*********header*********/
+.header__wrapper {
+	width: 100vw;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 999;
+	height: 10rem;
+}
+
+.logo {
+	margin-right: 52.5rem;
+}
+
+.menu {
+	display: flex;
+	margin-right: 2.3rem;
+}
+
+.menu-item {
+	margin-left: 2.3rem;
+	font-size: 1.6rem;
+	font-weight: 600;
+	position: relative;
+}
+
+.menu__pointer {
+	display: flex;
+	justify-content: center;
+}
+
+.menu__pointer::before {
+	content: '';
+	width: 0;
+	height: 2px;
+	margin-right: 1px;
+	background-color: #008ed6;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.menu__pointer::after {
+	content: '';
+	width: 0;
+	height: 2px;
+	margin-left: 1px;
+	background-color: #008ed6;
+	display: block;
+	transition: all 0.5s ease;
+}
+
+.menu-item__link:hover .menu__pointer::before, .menu-item__link:hover .menu__pointer::after {
+	width: 50%;
+}
+
+.menu-item__link:focus .menu__pointer::before, .menu-item__link:focus .menu__pointer::after {
+	width: 50%;
+}
+
+.menu__line {
+	display: none;
+}
+
+/*********header main*********/
+.header-main {
+	display: flex;
+	justify-content: center;
+	padding-top: 10rem;
+}
+
+.header-main-information {
+	margin-right: 28rem;
+}
+
+.subtitle {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #008ed6;
+	font-size: 1.4rem;
+	letter-spacing: 0.1em;
+}
+
+.header-main-information__subtitle {
+	margin-top: 5.8rem;
+}
+
+.header-main-information__title {
+	color: #fff;
+	font-weight: 600;
+	font-size: 4.8rem;
+	width: 48rem;
+	line-height: 1;
+	margin-top: 2rem;
+	margin-bottom: 0;
+}
+
+.text {
+	color: #999;
+	font-size: 1.8rem;
+	font-weight: 400;
+	line-height: 1.49;
+}
+
+.header-main-information__text {
+	width: 48rem;
+	margin-top: 2.5rem;
+}
+
+.btn {
+	width: 16rem;
+	height: 5rem;
+	border-radius: 4px;
+	border: 1px solid #444348;
+	text-transform: uppercase;
+	color: #fff;
+	background: transparent;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.btn:hover {
+	background: #008ed6;
+	border: 0;
+	transition: all 0.25s ease;
+	cursor: pointer;
+}
+
+.button__download, .button__features {
+	margin-right: 1.8rem;
+	margin-top: 4.2rem;
+}
+
+.header-main-device__img {
+	margin-top: 1.8rem;
+}
+
+/*********features*********/
+.features {
+	margin-bottom: 5.2rem;
+}
+
+.features__header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.features__subtitle {
+	margin: 6rem auto 0;
+}
+
+.mid-title {
+	font-size: 3.6rem;
+	color: #1a1a1a;
+	font-weight: 600;
+}
+
+.features__mid-title {
+	margin: 1rem auto 0;
+}
+
+.ornament {
+	display: flex;
+	margin: 3.3rem auto 7.3rem;
+}
+
+.ornament::before {
+	content: '';
+	width: 20px;
+	height: 2px;
+	background: #008ed6;
+	margin-right: 1px;
+}
+
+.ornament::after {
+	content: '';
+	width: 20px;
+	height: 2px;
+	background: #008ed6;
+	margin-left: 1px;
+}
+
+/*********features list*********/
+.features-list {
+	max-width: 64vw;
+	margin: 0 auto 5.1rem;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.features-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 23rem;
+}
+
+.features-box__title {
+	font-size: 2.4rem;
+	font-weight: 400;
+	margin-bottom: 0;
+	margin-top: 2.7rem;
+}
+
+.features-box__text {
+	text-align: center;
+	margin-top: 1rem;
+}
+
+/*********about*********/
+.line {
+	 background-color: rgb(237, 237, 237);
+	 height: 1px;
+	 width: 100%;
+ }
+
+.about {
+	display: flex;
+	justify-content: center;
+	margin-top: 6.5rem;
+	margin-right: 10rem;
+}
+
+.about__device {
+	margin-right: 7rem;
+}
+
+.about__header {
+	margin-top: 3rem;
+}
+
+.about__subtitle {
+	margin-top: 5rem;
+	margin-bottom: 0;
+}
+
+.about__mid-title {
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+.about__ornament {
+	margin-top: 2.3rem;
+	margin-bottom: 0;
+}
+
+.about__text {
+	max-width: 47rem;
+	margin-top: 2.5rem;
+}
+
+.details-list__item {
+	color: #1b1b1b;
+	font-size: 1.8rem;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	padding-top: 1.3rem;
+}
+
+/*.details-list__item::before {*/
+	/*content: '';*/
+	/*display: block;*/
+	/*margin-right: 1rem;*/
+/*}*/
+
+/*.details-list__item_1::before {*/
+	/*background: url("../images/cup_icon.png");*/
+	/*width: 16px;*/
+	/*height: 16px;*/
+	/*margin-right: 0.5rem;*/
+/*}*/
+
+/*.details-list__item_2::before {*/
+	/*background: url("../images/mouse_icon.png");*/
+	/*width: 10px;*/
+	/*height: 17px;*/
+/*}*/
+
+/*.details-list__item_3::before {*/
+	/*background: url("../images/energy_icon.png");*/
+	/*width: 11px;*/
+	/*height: 17px;*/
+/*}*/
+
+/*.details-list__item_4::before {*/
+	/*background: url("../images/speedometer_icon.png");*/
+	/*width: 16px;*/
+	/*height: 16px;*/
+	/*margin-right: 0.5rem;*/
+/*}*/
+
+/*.about__details-list {*/
+	/*padding-left: 0.5rem;*/
+/*}*/
+
+/*********about-short*********/
+.about-short {
+	background: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1.7rem;
+	min-width: 50vw;
+
+}
+
+.about-short__wrapper {
+	margin-left: 7.2rem;
+}
+
+.about-short__text {
+	margin-top: 3rem;
+	margin-bottom: 7.8rem;
+}
+
+.about__device-short {
+	margin-top: 3.2rem;
+	margin-bottom: 1.7rem;
+}
+
+/***************************Animate.css elements duration***************************/
+
+.fadeInLeft, .fadeInRight, .fadeInDown, .zoomIn, .slideInUp {
+	animation-duration: 2.5s !important;
+}
+
+/***************************MEDIA QUERIES***************************/
+@media (max-width: 479px) {
+	.header-main {
+		flex-wrap: wrap;
+	}
+
+	.header-main-information {
+		margin-right: 1rem;
+		margin-left: 3rem;
+		align-items: center;
+		animation-duration: 10s;
+		animation-delay: 4s;
+		animation-iteration-count: infinite;
+	}
+
+	.header-main-device__img {
+		width: 24rem;
+		margin-top: 3rem;
+		margin-right: 1rem
+	}
+
+	.features__mid-title {
+		text-align: center;
+	}
+
+	.about__img {
+		width: 26rem;
+	}
+
+	.about__wrapper {
+		width: 10rem;
+		align-items: center;
+	}
+
+	.about-short__wrapper {
+		margin: 1rem;
+	}
+
+}
+
+@media (min-width: 480px) and (max-width: 719px) {
+	.header-main-device__img {
+		width: 24rem;
+		margin-top: 13rem;
+		margin-right: 1rem;
+	}
+
+	.header-main-information {
+		margin-right: 1rem;
+		margin-left: 1rem;
+	}
+}
+
+@media (max-width: 719px) {
+	.header__wrapper {
+		display: block;
+		position: static;
+		padding-top: 3rem;
+	}
+
+	.logo {
+		margin-right: 0;
+		margin-left: 10rem;
+	}
+
+	.menu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 0;
+	}
+
+	.menu-item {
+		padding-top: 1rem;
+	}
+
+	.menu__line {
+		display: block;
+	}
+
+	.subtitle {
+		font-size: 1.1rem;
+	}
+
+	.header-main-information__subtitle {
+		margin-right: 1rem;
+	}
+
+	.header-main-information__title {
+		font-size: 2.5rem;
+		width: 18rem;
+	}
+
+	.text {
+		font-size: 1.4rem;
+		width: 20rem;
+	}
+
+	.btn {
+		width: 12rem;
+		height: 3.5rem;
+		font-size: 1.1rem;
+	}
+
+	.button__download, .button__features {
+		margin-right: 1.5rem;
+		margin-top: 1rem;
+	}
+
+	.about {
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.about__device {
+		margin: 0 auto;
+	}
+
+	.about__img {
+		width: 28rem;
+	}
+
+	.about__wrapper {
+		margin: 0 auto;
+	}
+
+	.about__header {
+		margin-top: 0;
+	}
+
+	.about__subtitle {
+		margin-top: 0;
+	}
+
+	.about__mid-title {
+		font-size: 2.4rem;
+	}
+
+	.about__ornament {
+		margin-top: 1rem;
+		margin-bottom: 0;
+	}
+
+	.about__text {
+		margin-top: 2rem;
+	}
+
+	.details-list__item {
+		padding-top: 0.8rem;
+		font-size: 1.5rem;
+	}
+
+	.about-short {
+		flex-wrap: wrap;
+		flex: 2 2 auto;
+	}
+
+	.about-short__img {
+		width: 35rem;
+	}
+
+}
+
+@media (min-width: 720px) and (max-width: 919px) {
+	.logo {
+		margin-right: 3rem;
+	}
+
+	.header-main-information {
+		margin-right: 7rem;
+	}
+
+	.subtitle {
+		font-size: 1.3rem;
+	}
+
+	.header-main-information__subtitle {
+		margin-right: 0;
+	}
+
+	.header-main-information__title {
+		font-size: 3rem;
+		margin-right: 0;
+		width: 30rem;
+	}
+
+	.header-main-information__text {
+		width: 50vw;
+		max-width: 30rem;
+		margin-right: 0;
+	}
+
+	.text {
+		font-size: 1.5rem;
+	}
+
+	.header-main-device__img {
+		width: 30rem;
+		margin-top: 4rem;
+	}
+
+	.btn {
+		font-size: 1.2rem;
+		width: 13rem;
+		height: 4rem;
+	}
+
+	.button__download, .button__features {
+		margin-right: 1.5rem;
+		margin-top: 2.2rem;
+	}
+
+	.about__device {
+		margin-right: 2rem;
+	}
+
+	.about__img {
+		width: 35rem;
+	}
+
+	.about__header {
+		margin-top: 0;
+	}
+
+	.about__subtitle {
+		margin-top: 0;
+	}
+
+	.about__ornament {
+		margin-top: 1rem;
+		margin-bottom: 0;
+	}
+
+	.about__text {
+		margin-top: 2rem;
+	}
+
+	.details-list__item {
+		padding-top: 0.8rem;
+		font-size: 1.5rem;
+	}
+
+	.about-short__img {
+		width: 40rem;
+	}
+}
+
+@media (min-width: 920px) and (max-width: 1279px) {
+	.header__wrapper {
+		padding-bottom: 0;
+	}
+
+	.logo {
+		margin-right: 17rem;
+	}
+
+	.header-main-information {
+		margin-right: 8rem;
+	}
+
+	.header-main-information__title {
+		width: 36rem;
+		font-size: 4.2rem;
+	}
+
+	.header-main-information__text {
+		width: 50vw;
+		max-width: 36rem;
+	}
+
+	.button__download, .button__features {
+		margin-top: 1rem;
+	}
+
+	.header-main-device__img {
+		width: 38rem;
+		margin-top: 4rem;
+	}
+
+	.about__img {
+		width: 42rem;
+	}
+
+	.about__header {
+		margin-top: 1rem;
+	}
+
+	.about__subtitle {
+		margin-top: 0;
+	}
+
+	.details-list__item {
+		padding-top: 1rem;
+	}
+
+	.about-short__img {
+		width: 50rem;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.header-main {
+		margin-right: 5.1rem;
+	}
+
+	.header-main-information {
+		margin-right: 23.1rem;
+	}
+
+	.features__subtitle {
+		padding-right: 1.8rem;
+	}
+
+	.features__mid-title, .features__ornament {
+		padding-right: 2rem;
+	}
+
+}
