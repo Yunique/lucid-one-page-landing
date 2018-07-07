@@ -23,6 +23,7 @@ input, textarea {
 	border: none;
 	background: transparent;
 	outline: 0;
+	text-indent: 1rem;
 }
 
 .first-screen {
@@ -525,10 +526,6 @@ input, textarea {
 	padding: 0;
 }
 
-/*.contacts_phone, .contacts_place {*/
-/*margin-right:0;*/
-/*}*/
-
 .address-info {
 	margin: 2rem auto;
 }
@@ -537,7 +534,7 @@ input, textarea {
 .form-container {
 	width: 76rem;
 	height: 36rem;
-	background: #000;
+	background: #15141a;
 	margin: 0 auto 31rem;
 }
 
@@ -568,15 +565,23 @@ input, textarea {
 	margin-bottom: 1rem;
 }
 
-.input--message {
+.input:focus {
+	text-indent: 1rem;
+	box-shadow: 0 0 6px rgba(255, 255, 255, .2);
+}
+
+.input_textarea {
 	margin-right: 6rem;
 	height: 19rem;
 	font-size: 1.4rem;
+	resize: none;
+	overflow: hidden;
 }
 
 .input::placeholder {
 	font-size: 1.4rem;
-	padding: 1rem;
+	padding: 1rem 0;
+	color: rgba(255, 255, 255, .3)
 }
 
 .btn__message {
@@ -678,13 +683,16 @@ input, textarea {
 		flex-direction: column;
 	}
 
+	.about_text {
+		margin: 0 auto;
+	}
+
 	.about__wrapper {
-		width: 10rem;
-		align-items: center;
+		padding: 2rem;
 	}
 
 	.about-short__wrapper {
-		margin: 1rem;
+		margin: 2rem;
 	}
 
 	.testimonials-box__text {
@@ -709,7 +717,7 @@ input, textarea {
 		max-width: 30rem;
 		align-items: center;
 		padding: 0;
-		margin: 0;
+		margin: 0 auto;
 	}
 
 	.wrapper-form {
@@ -734,6 +742,14 @@ input, textarea {
 	.testimonials__slider-boxes {
 		padding-bottom: 8rem;
 		margin-top: 5rem;
+	}
+
+	.about {
+		margin-right: 0;
+	}
+
+	.about-short__wrapper {
+		margin-left: 0;
 	}
 
 	.download-header__title {
@@ -883,14 +899,15 @@ input, textarea {
 		height: 45rem;
 	}
 
-	.input--message {
+	.input_message {
 		height: 10rem;
-		margin: 0;
+		margin: 0 auto;
 	}
 
 	.wrapper-form {
 		flex-direction: column;
 		align-items: center;
+
 	}
 }
 
